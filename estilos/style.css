@@ -79,7 +79,7 @@ nav a:hover{
 
 main{
     min-width: 300px;
-    max-width: 2050px;
+    max-width: 1050px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -88,6 +88,8 @@ main{
     border-bottom-right-radius: 10px;
     background-color: white;
 }
+
+
 main h1{
     color: var(--cor5);
     text-align: center;
