@@ -13,9 +13,7 @@
         }
         table{
             border-collapse: collapse;
-            min-width: 768px ;
-            max-width: 992px ;
-            background-color: white;
+           
             
         }
         thead{
@@ -27,6 +25,8 @@
 
         }
         th{
+            background: #28373C;
+            color: white;
             border: 2px solid black;
             padding: 10px;
             text-align: center;
@@ -41,11 +41,12 @@
             
         }
 
-        thead > tr > th > td {
+        thead > tr > th {
             position: sticky;
             top: -1px;
             
         }
+ 
     </style>
 
 </head>
@@ -62,9 +63,103 @@
     </nav>
     <main>
         <h2> (1) Tabela sobre: Quais são os principais recursos e diferenças entre os sistemas operacionais Windows 8, 10 e 11?</h2>
-        <img src="imagens/tabela.jpg" alt="Tabela Comparativa">
-
-     
+        <table>
+            <caption>Tabela criada para fim comparativo</caption>
+            <thead>
+                <tr>
+                    <th>Recurso/Diferença </th>
+                    <th>Windows 8</th>
+                    <th>Windows 10</th>
+                    <th>Windows 11</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Interface do Usuário</th>
+                    <td>Tela Iniciar com "Live Tiles" em tela cheia</td>
+                    <td>Barra Charms lateral, Menu Iniciar removido.</td>
+                    <td>Menu Iniciar tradicional (com Live Tiles opcionais), Assistente Cortana integrado na barra de tarefas, Área de Trabalho Virtual.</td>
+                </tr>
+                <tr>
+                   <th>Menu Iniciar</th>
+                   <td>Tela Iniciar em tela cheia.
+                    Ícones de aplicativos fixados.</td>
+                   <td>Menu Iniciar com lista de aplicativos e Live Tiles.</td>
+                   <td>Menu Iniciar centralizado, design "Fluent Design" com cantos arredondados, Widgets separados, Snap Layouts aprimorados, sem Live Tiles</td>
+                </tr>
+                <tr>
+                    <th>Assistente Virtual</th>
+                    <td>Sem assistente virtual integrado nativamente.</td>
+                    <td>Ícones de aplicativos fixados, caixa de pesquisa Cortana integrada</td>
+                    <td>Menu Iniciar simplificado e centralizado, sem Live Tiles. Ícones de aplicativos fixados centralizados (opcionalmente à esquerda), Widgets integrados.</td>
+                </tr>
+                <tr>
+                    <th>Área de Trabalho Virtual</th>
+                    <td>Introduzida, mas menos intuitiva</td>
+                    <td>Cortana integrada na barra de tarefas.</td>
+                    <td>Cortana separada como um aplicativo</td>
+                </tr>
+                <tr>
+                    <th>Snap Layouts/Assistente	</th>
+                    <td>Funcionalidade básica de "Snap".</td>
+                    <td>Totalmente integrada e fácil de usar.</td>
+                    <td>Totalmente integrada e fácil de usar.</td>
+                </tr>
+                <tr>
+                    <th>Widgets	</th>
+                    <td>Não disponível nativamente.</td>
+                    <td>Snap Assist aprimorado para organizar janelas</td>
+                    <td>Snap Layouts pré-configurados e fáceis de usar.</td>
+                </tr>
+                <tr>
+                    <th>Segurança</th>
+                    <td>Windows Defender aprimorado.</td>
+                    <td>Painel de notícias e interesses na barra de tarefas (precursor dos Widgets).</td>
+                    <td>Painel de Widgets separado e personalizável.</td>
+                </tr>
+                <tr>
+                    <th>Desempenho</th>
+                    <td>Melhorias em relação ao Windows 7.</td>
+                    <td>Windows Defender aprimorado, Windows Hello (reconhecimento facial/biométrico).</td>
+                    <td>Windows Defender aprimorado,</td>
+        
+                </tr>
+                <tr>
+                    <th>Compatibilidade	</th>
+                    <td>Compatibilidade com muitos softwares legados.</td>
+                    <td>Otimizações de desempenho contínuas.</td>
+                    <td>Windows Hello aprimorado, TPM 2.0 obrigatório para instalação</td>
+                </tr>
+                <tr>
+                    <th>Atualizações</th>
+                    <td>Modelo de atualização tradicional.</td>
+                    <td>Ampla compatibilidade com softwares e hardwares. <strong>OBS: A Microsoft informou que a patir de 10/2025 não haverá mais atualização e suporte para o Window10</strong> </td>
+                    <td>Otimizações de desempenho focadas na responsividade e eficiência.</td>
+                </tr>
+                <tr>
+                    <th>Requisitos Mínimos (Geral)</th>
+                    <td>Mais leve em alguns aspectos que o Vista/7.	</td>
+                    <td>Windows as a Service (WaaS), atualizações de recursos semestrais.</td>
+                    <td>Compatibilidade geralmente boa, mas com requisitos de hardware mais recentes.</td>
+                </tr>
+                <tr>
+                    <th>Foco Principal</th>
+                    <td>Adaptado para toque e dispositivos móveis.</td>
+                    <td>Requisitos semelhantes ao Windows 8.</td>
+                    <td>Windows as a Service (WaaS), atualizações de recursos anuais.</td>
+                </tr>
+                <tr>
+                    <th>Outros Recursos</th>
+                    <td>N/A</td>
+                    <td>Plataforma unificada para desktops, laptops e tablets.</td>
+                    <td>Requisitos de hardware geralmente mais elevados (CPU, RAM, TPM 2.0). Interface moderna e simplificada, foco em produtividade e criatividade</td>
+                </tr>
+            </tbody>
+            
+        </table>
+          <tfoot>
+            <p>Tabela toda desenvolvida no Visual Studio Code</p>
+         </tfoot>
         <h2>(2) Faça um manual de Instalação e configuração de sistema operacionais. Windows ( 11 e 10) e Linux.</h2>
         <p>
             Este guia apresenta os passos principais para a instalação e configuração básica dos sistemas operacionais Windows 10, Windows 11 e Linux (considerando distribuições populares como Ubuntu e Mint).
@@ -73,50 +168,50 @@
             Observações Importantes:
         </p>
         <ul>
-            <li>Backup: Antes de qualquer instalação, faça um backup completo dos seus dados importantes!</li>
-            <li> Requisitos de Sistema: Verifique os requisitos mínimos e recomendados de cada sistema operacional para garantir o bom funcionamento no seu hardware.</li>
-            <li>Mídia de Instalação: Você precisará de um pendrive bootável ou DVD com os arquivos de instalação do sistema operacional desejado.</li>
+            <li><strong>Backup:</strong> Antes de qualquer instalação, faça um backup completo dos seus dados importantes!</li>
+            <li> <strong>Requisitos de Sistema: </strong>Verifique os requisitos mínimos e recomendados de cada sistema operacional para garantir o bom funcionamento no seu hardware.</li>
+            <li><strong>Mídia de Instalação:</strong> Você precisará de um pendrive bootável ou DVD com os arquivos de instalação do sistema operacional desejado.</li>
         </ul>
             <h3>Windows (11 e 10)</h3>
             <p>Os processos de instalação do Windows 10 e 11 são bastante similares. As principais diferenças residem na interface e em alguns requisitos de hardware (especialmente para o Windows 11).</p>
         
         <ul>
-        <p>A. Preparação:</p>
+        <p>Preparação:</p>
         
-        <ul><li>Criar Mídia de Instalação:</li></ul>
+        <ul><li><strong>Criar Mídia de Instalação:</strong></li></ul>
         <ul>Windows 10: </ul>Utilize a "Media Creation Tool" da Microsoft (disponível no site oficial) para criar um pendrive bootável ou gravar um DVD.
         <ul>Windows 11: </ul>Utilize a "Media Creation Tool" da Microsoft (disponível no site oficial) para criar um pendrive bootável. Geralmente, a instalação via DVD não é recomendada.
-        <ul><li>Configurar o Boot:</li></ul>
+        <ul><li><strong>Configurar o Boot:</strong></li></ul>
         <ul>Acesse a BIOS/UEFI</ul> do seu computador (geralmente pressionando Del, F2, F12 ou outra tecla durante a inicialização - verifique o manual da sua placa-mãe).
         <ul>Altere a ordem de boot</ul> para que o pendrive ou DVD seja a primeira opção.
-        <ul><li>Requisitos do Windows 11 (Ponto de Atenção):</li></ul>
+        <ul><li><strong>Requisitos do Windows 11 (Ponto de Atenção):</strong></li></ul>
         TPM 2.0 (Trusted Platform Module) ativado na BIOS/UEFI.
         Secure Boot ativado na BIOS/UEFI.
         Processador compatível (verifique a lista de processadores suportados pela Microsoft).
-        <ul><li>B. Instalação:</li></ul>
+        <ul><li><strong>Instalação:</strong></li></ul>
         
-        <ul><li>Iniciar a Instalação:</li></ul>
+        <ul><li><strong>Iniciar a Instalação:</strong></li></ul>
         Salve as alterações na BIOS/UEFI e reinicie o computador com a mídia de instalação conectada.
         A instalação do Windows deverá iniciar automaticamente.
         <ul><li>Idioma, Formato de Hora e Teclado:</li></ul>
         Selecione suas preferências de idioma, formato de hora e teclado.
         Clique em "Avançar".
-        <ul><li>Instalar Agora:</li></ul>
+        <ul><li><strong>Instalar Agora:</strong></li></ul>
         Clique em "Instalar agora".
-        <ul><li>Ativação (Opcional):</li></ul>
+        <ul><li><strong>Ativação (Opcional):</strong></li></ul>
         Se você tiver uma chave de produto, insira-a. Caso contrário, pode selecionar "Não tenho a chave do produto" para ativar posteriormente (o Windows funcionará com funcionalidades limitadas até a ativação).
         <ul><li>Termos de Licença:</li></ul>
         Leia e aceite os termos de licença.
         Clique em "Avançar".
-        <ul><li>Tipo de Instalação:</li></ul>
+        <ul><li><strong>Tipo de Instalação:</strong></li></ul>
         Selecione "Personalizada: Instalar apenas o Windows (avançado)".
         Onde você quer instalar o Windows?
         Selecione a partição onde você deseja instalar o Windows.
         Cuidado: Se você deseja formatar uma partição existente, selecione-a e clique em "Formatar". Se você tem um disco novo, pode selecionar o espaço não alocado e clicar em "Novo" para criar partições.
         Clique em "Avançar".
-        <ul><li>Copiando arquivos do Windows...:</li></ul>
+        <ul><li><strong>Copiando arquivos do Windows...:</strong></li></ul>
         Aguarde a conclusão do processo de cópia e instalação dos arquivos. O computador será reiniciado várias vezes.
-        <ul><li>Configurações Iniciais:</li></ul>
+        <ul><li><strong>Configurações Iniciais:</strong></li></ul>
         Após a reinicialização, você será guiado por algumas telas de configuração:
         Região e idioma.
         Layout do teclado.
@@ -127,30 +222,30 @@
         Definir um PIN (opcional).
         Configurações de privacidade.
         Cortana (assistente virtual - opcional).
-        <ul><li>Finalização:</li></ul>
+        <ul><li><strong>Finalização:</strong></li></ul>
         Aguarde a preparação da área de trabalho.
         <li>
-            <ul>C. Configuração Pós-Instalação:</ul>
+            <ul><strong>Configuração Pós-Instalação:</strong></ul>
         </li>
         
-        <ul><li>Instalar Drivers:</li></ul>
+        <ul><li><strong>Instalar Drivers:</strong></li></ul>
         O Windows geralmente instala drivers básicos, mas é recomendável instalar os drivers mais recentes do site do fabricante do seu hardware (placa-mãe, placa de vídeo, etc.).
-        <ul><li>Ativar o Windows (se necessário):</li></ul>
+        <ul><li><strong>Ativar o Windows (se necessário):</strong></li></ul>
         Vá em "Configurações" > "Atualização e Segurança" > "Ativação".
-        <ul><li>Windows Update:</li></ul>
+        <ul><li><strong>Windows Update:</strong></li></ul>
         Execute o Windows Update para instalar as atualizações mais recentes de segurança e funcionalidades.
         <ul>Instalar Programas:</ul>
         Instale os softwares que você utiliza.
-        <ul><li>Configurar Perfil de Usuário:</li></ul>
+        <ul><li><strong>Configurar Perfil de Usuário:</strong></li></ul>
         Personalize as configurações da sua conta de usuário (papel de parede, temas, etc.).
-        <ul><li>Configurar Firewall e Segurança:</li></ul>
+        <ul><li><strong>Configurar Firewall e Segurança:</strong></li></ul>
         Verifique as configurações do Firewall do Windows e instale um software antivírus, se desejar.
         </ul>
-        <h3>II. Linux (Exemplo: Ubuntu/Mint)</h3>
+        <h3><strong>II. Linux (Exemplo: Ubuntu/Mint)</strong></h3>
         <p>
         O processo de instalação do Linux pode variar um pouco entre distribuições, mas os passos gerais são semelhantes. Ubuntu e Mint são conhecidos por terem instaladores gráficos amigáveis.
         </p>
-        <ul>A. Preparação:</ul>
+        <ul>A Preparação:</ul>
         
         <ul>Baixar a ISO:</ul>
         Acesse o site oficial da distribuição Linux que você escolheu (ex: Ubuntu, Linux Mint) e baixe a imagem ISO.
@@ -158,7 +253,7 @@
         Utilize um software como Rufus (Windows), Etcher (multiplataforma) ou o utilitário de criação de disco de inicialização do próprio Linux (se você já tiver um sistema Linux) para criar um pendrive bootável com a ISO baixada.
         <ul>Configurar o Boot:</ul>
         Acesse a BIOS/UEFI do seu computador e altere a ordem de boot para que o pendrive seja a primeira opção.
-        <ul>B. Instalação:</ul>
+        <ul>Instalação:</ul>
         
         <ul>Iniciar a Instalação:</ul>
         Salve as alterações na BIOS/UEFI e reinicie o computador com o pendrive conectado.
