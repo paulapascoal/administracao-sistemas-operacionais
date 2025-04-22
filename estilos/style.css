@@ -138,24 +138,21 @@ main > strong {
 
 }
 
+#resposta{
+    color:var(--cor1) ;
+    font-weight: bold;
+  
+   
+}
+
 h3{
     color: white;
     background-image: linear-gradient(to right, var(--cor4), transparent);
     
 }
 
-caption{
-    background-image: linear-gradient(to bottom, var(--cor1), transparent);
-    color: var(--cor5;
-    font-family: var(--fonte-destaque);
-    font-weight: bolder;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 5px;
 
-}
 
-/*
 footer {
     background-color: var(--cor5);
     color: white;
@@ -163,16 +160,18 @@ footer {
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
+    border-radius: 20px 10px;
 
 }
 
 footer a{
     text-decoration: none;
+    color: white;
 }
 
 footer a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
-}*/
+}
 
 
