@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>15/04/2025 Página 124 e 126</h1>
+    <h2>(1)Informações relevantes sobre Windows Server</h2>
+    <p>
+        Windows Server é uma linha de sistemas operacionais da Microsoft projetada especificamente para servidores. Ele se diferencia das versões desktop do Windows por oferecer recursos avançados para gerenciar redes, hospedar serviços, armazenar dados e executar aplicações empresariais. 
+    </p>
+    <p>
+        Qual das seguintes funcionalidades é uma característica principal do Windows Server?
+        <ol type="a">
+            <li>Interface gráfica otimizada para uso doméstico.</li>
+            <li>Ferramentas avançadas para gerenciamento de redes e servidores.</li>
+            <li>Foco exclusivo em aplicações de produtividade pessoal.</li>
+            <li>Ausência de recursos de segurança integrados.</li>
+            <li>Limitação na capacidade de hospedar serviços de rede.</li>
+        </ol>
+    </p>
+    <h2>(2)O que é AD e ADDS?</h2>
+    
+        <ul type="square">
+            <li><strong>AD (Active Directory):</strong> É um serviço de diretório da Microsoft utilizado em redes de domínio para gerenciar informações sobre usuários, computadores, grupos, políticas de segurança e outros objetos. Pense nele como um banco de dados centralizado que organiza e controla o acesso aos recursos da rede. Ele fornece autenticação (verificação de identidade) e autorização (permissão de acesso) para usuários e computadores.</li>
+            <li><strong>ADDS (Active Directory Domain Services):</strong> É a função de servidor no Windows Server que implementa e hospeda o serviço de diretório Active Directory. Em outras palavras, o ADDS é o componente do Windows Server que você instala para criar e gerenciar um domínio do Active Directory. Ele fornece os serviços essenciais para autenticação, autorização e gerenciamento centralizado.</li>
+        </ul>
+
+        <p>Qual é a principal função do Active Directory (AD) em uma rede de domínio?</p>
+
+            <ol type="a">
+                <li> Fornecer acesso à internet para os usuários.</li>
+                <li>Gerenciar a impressão de documentos na rede.</li>
+                <li>Centralizar o gerenciamento de usuários, computadores e políticas de segurança.</li>
+                <li>Monitorar o tráfego de rede em tempo real.</li>
+                <li>Realizar backups automáticos dos dados dos usuários.</li>
+            </ol>
+
+    
+    
+    <h2>(3)Os tipos de relação de confiança do AD?</h2>
+    <ol>
+        <ul>
+            <li>Confiança Transitiva: É o tipo padrão de confiança estabelecido entre domínios em uma mesma floresta do Active Directory. Se o Domínio A confia no Domínio B, e o Domínio B confia no Domínio C, então o Domínio A confia automaticamente no Domínio C 1  (a confiança "transita").</li>
+            Confiança Não Transitiva (ou Externa): É uma relação de confiança unidirecional ou bidirecional estabelecida entre domínios que não estão na mesma floresta. Essa confiança precisa ser configurada explicitamente e não é transitiva.
+
+        <li>Confiança de Atalho (Shortcut Trust): Criada dentro de uma floresta com uma estrutura de árvore complexa para otimizar o processo de autenticação entre domínios que estão logicamente distantes na hierarquia. Ela cria um caminho de confiança mais direto.</li>
+
+        <li>Confiança de Floresta (Forest Trust): Permite a confiança entre duas florestas inteiras do Active Directory. Pode ser unidirecional ou bidirecional e permite que usuários de uma floresta autentiquem-se e acessem recursos na outra.</li>
+        </ul>
+    </ol>
+    
+    <p>Qual tipo de relação de confiança no Active Directory é estabelecida automaticamente entre domínios dentro da mesma floresta, permitindo que a confiança se estenda através da hierarquia?</p>
+<ol type="a">
+    
+        <li>
+            Confiança Externa
+            Confiança de Atalho
+        </li>
+        <li>Confiança de Floresta</li>
+        <li>Confiança Transitiva</li>
+        <li>Confiança Unidirecional</li>
+</ol>
+
+    
+</body>
+</html>
