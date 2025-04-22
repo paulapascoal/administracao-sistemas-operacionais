@@ -90,6 +90,8 @@ main{
 }
 
 
+
+
 main h1{
     color: var(--cor5);
     text-align: center;
@@ -153,6 +155,7 @@ caption{
 
 }
 
+/*
 footer {
     background-color: var(--cor5);
     color: white;
@@ -170,5 +173,6 @@ footer a{
 footer a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
-}
+}*/
+
 
