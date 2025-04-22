@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 3</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <h1>17/04/2025 Página 127 a 129</h1>
-    <ol type="1">
-        <li>Responda certo ou errado e justifique: “A arquitetura de software tem como objetivo apresentar a estrutura dos componentes lógicos do sistema, ficando a análise de dados para a disciplina de AD (Active Directory)”</li>
-        <p>Errado. A arquitetura de software abrange a estrutura geral do sistema, incluindo seus componentes lógicos, como eles interagem e como os dados são armazenados e acessados. A análise de dados é uma parte importante da arquitetura, definindo modelos de dados e estratégias de persistência. O Active Directory (AD) é um serviço específico para gerenciamento de identidades e acesso em redes Windows, não a disciplina responsável pela análise geral de dados do sistema.</p>
-        <li>O que é HYPER e qual a diferença para VirtualBox?</li>
-        <li>O que é uma floresta dentro do AD/ADDS?</li>
+    <header>
+        <h1>17/04/2025 Página 127 a 129</h1>
+    </header>
+    <main>
+        <ol type="1">
+            <li>Responda certo ou errado e justifique: “A arquitetura de software tem como objetivo apresentar a estrutura dos componentes lógicos do sistema, ficando a análise de dados para a disciplina de AD (Active Directory)”</li>
+            <p>Errado. A arquitetura de software abrange a estrutura geral do sistema, incluindo seus componentes lógicos, como eles interagem e como os dados são armazenados e acessados. A análise de dados é uma parte importante da arquitetura, definindo modelos de dados e estratégias de persistência. O Active Directory (AD) é um serviço específico para gerenciamento de identidades e acesso em redes Windows, não a disciplina responsável pela análise geral de dados do sistema.</p>
+            <li>O que é HYPER e qual a diferença para VirtualBox?</li>
+               <p>
+                HYPER provavelmente se refere ao Hyper-V, a plataforma de virtualização nativa da Microsoft, integrada ao Windows Server e algumas edições do Windows. A principal diferença para o VirtualBox, que é um software de virtualização de terceiros (Oracle), é que o Hyper-V é um hypervisor de tipo 1 (bare-metal) em sistemas server, rodando diretamente sobre o hardware (embora em sistemas desktop funcione como tipo 2). VirtualBox é geralmente um hypervisor de tipo 2 (hosted), rodando como uma aplicação sobre um sistema operacional já instalado. Hyper-V tende a ter melhor integração com o ecossistema Microsoft e pode oferecer melhor performance em certos cenários Windows.
+            </p>
+            <li>O que é uma floresta dentro do AD/ADDS?</li>
+            <p>Uma floresta no Active Directory Domain Services (AD DS) é o contêiner de nível mais alto na estrutura lógica do AD DS. Ela representa uma ou mais árvores de domínio que compartilham uma relação de confiança transitiva.</p>
+            <p>Pense em uma floresta como uma coleção de domínios que confiam uns nos outros. Essa confiança permite que os usuários de um domínio acessem recursos em outro domínio dentro da mesma floresta, dependendo das permissões configuradas.</p>
+            
+            <li>Faça um diagrama/desenho de como se organizam Unidade Organizacionais: TURMA e Usuários: DOIS COLEGAS [árvore]</li>
+            <p>
+                Uma floresta dentro do AD/ADDS é uma coleção de um ou mais domínios do Active Directory que possuem relações de confiança transitivas entre si. Ela representa uma estrutura organizacional maior, permitindo o compartilhamento de recursos e informações entre os domínios da floresta, mantendo, ao mesmo tempo, limites administrativos separados.
+            </p>
+            <li>De acordo com página 129, crie [escreva no caderno] o SEU seria o seu usuário. Exemplo: jeheinen.</li>
+            <p>     Organização
+                     └── TURMA
+                    ├── COLEGA_UM
+                    └── COLEGA_DOIS</p>
+            <li>Além das regras que já conhece, cite mais duas regras de senha segura: por exemplo, não pode número em sequência ou repetidos;</li>
+            <ul>
+                <li>Não utilize palavras ou frases que possam ser encontradas em dicionários, incluindo variações com números ou letras substituídas.</li>
+                <li>Evite padrões de teclado (como QWERTY, ASDFG) ou sequências numéricas simples (1234, 9876).</li>
+            </ul>
+            <li>Faça Unidade Organizacional da sua família com os Usuários.</li>
+        </ol>
         <p>
-            HYPER provavelmente se refere ao Hyper-V, a plataforma de virtualização nativa da Microsoft, integrada ao Windows Server e algumas edições do Windows. A principal diferença para o VirtualBox, que é um software de virtualização de terceiros (Oracle), é que o Hyper-V é um hypervisor de tipo 1 (bare-metal) em sistemas server, rodando diretamente sobre o hardware (embora em sistemas desktop funcione como tipo 2). VirtualBox é geralmente um hypervisor de tipo 2 (hosted), rodando como uma aplicação sobre um sistema operacional já instalado. Hyper-V tende a ter melhor integração com o ecossistema Microsoft e pode oferecer melhor performance em certos cenários Windows.
+            FAMÍLIA
+            ├── PAI
+            ├── MÃE
+            ├── FILHO_UM
+            └── FILHO_DOIS
         </p>
-        <li>Faça um diagrama/desenho de como se organizam Unidade Organizacionais: TURMA e Usuários: DOIS COLEGAS [árvore]</li>
-        <p>
-            Uma floresta dentro do AD/ADDS é uma coleção de um ou mais domínios do Active Directory que possuem relações de confiança transitivas entre si. Ela representa uma estrutura organizacional maior, permitindo o compartilhamento de recursos e informações entre os domínios da floresta, mantendo, ao mesmo tempo, limites administrativos separados.
-        </p>
-        <li>De acordo com página 129, crie [escreva no caderno] o SEU seria o seu usuário. Exemplo: jeheinen.</li>
-        <p>     Organização
-                 └── TURMA
-                ├── COLEGA_UM
-                └── COLEGA_DOIS</p>
-        <li>Além das regras que já conhece, cite mais duas regras de senha segura: por exemplo, não pode número em sequência ou repetidos;</li>
-        <ul>
-            <li>Não utilize palavras ou frases que possam ser encontradas em dicionários, incluindo variações com números ou letras substituídas.</li>
-            <li>Evite padrões de teclado (como QWERTY, ASDFG) ou sequências numéricas simples (1234, 9876).</li>
-        </ul>
-        <li>Faça Unidade Organizacional da sua família com os Usuários.</li>
-    </ol>
-    <p>
-        FAMÍLIA
-        ├── PAI
-        ├── MÃE
-        ├── FILHO_UM
-        └── FILHO_DOIS
-    </p>
+        
+    </main>
 
-
-    
+    <footer>
+        <p>Criado por <a href="https://github.com/paulapascoal">Paula Pascoal</a></p>
+    </footer>
 </body>
 </html>
