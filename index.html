@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Administação de Sistema Operacionais I</h1>
         <p>Desenvolvido para fim de Caderno Virtual de Aprendizado da Matéria</p>
+        <span id="burguer" class="material-icons" onclick="clickMenu()" >dehaze</span>
+        <menu id="itens">
+            <a href="pag001.html">Exercício 1</a>
+            <a href="pag002.html">Exercício 2</a>
+            <a href="pag003.html">Exercício 3</a>
+            <a href="pag004.html">Exercício 4</a>
+        </menu>
     </header>
-    <nav>
-        <a href="pag001.html">Exercício 1</a>
-        <a href="pag002.html">Exercício 2</a>
-        <a href="pag003.html">Exercício 3</a>
-        <a href="pag004.html">Exercício 4</a>
-    </nav>
+ 
     <main>
         <p>
             Acesse os exercícios propostos para a matéria de Administração de Sistema Operacional I
 
         </p>
     </main>
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768 ){
+                itens.style.display='block'
+
+            }else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display =='block'){
+                itens.style.display ='none'
+            } else{
+                itens.style.display ='block'
+            }
+            
+        }
+    </script>
 
     <footer>
         <p>Criado por <a href="https://github.com/paulapascoal">Paula Pascoal</a></p>

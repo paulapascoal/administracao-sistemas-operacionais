@@ -52,7 +52,7 @@ header p{
 
 }
 
-nav{
+menu{
     background-color: var(--cor5);
     text-decoration: none;
     color: white;
@@ -63,7 +63,7 @@ nav{
     
 }
 
-nav > a{
+menu > a{
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -72,10 +72,25 @@ nav > a{
     transition-duration: .5;
 }
 
-nav a:hover{
+menu a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
 }
+
+#burguer{
+    background-color: var(--cor4);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
 
 main{
     min-width: 300px;

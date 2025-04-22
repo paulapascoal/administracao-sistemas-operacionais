@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 1</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
 
 </head>
-<body> 
+<body onresize="mudouTamanho()"> 
     <header>
         <h1>12/04/2025 Virtual Box</h1>
     </header>
-    <nav>
+        <span id="burguer" class="material-icons" onclick="clickMenu()" >dehaze</span>
+        <menu id="itens">
         <a href="index.html">Página Inicial</a>
         <a href="pag002.html">Exercício 2</a>
         <a href="pag003.html">Exercício 3</a>
         <a href="pag004.html">Exercício 4</a>
-    </nav>
+        </menu>
     <main>
         <h2>(1) 2 Questões de múltipla escolha.</h2>
         <p><strong>Pergunta 1:</strong>
@@ -64,6 +66,26 @@
         <h2>(5) Crie uma senha segura.</h2>
         <p>Precisa ter letras, números e caracteres especiais de preferencialmente acima de 10 digitos.</p>
     </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768 ){
+                itens.style.display='block'
+
+            }else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display =='block'){
+                itens.style.display ='none'
+            } else{
+                itens.style.display ='block'
+            }
+            
+        }
+    </script>
+
 
     <footer>
         <p>Criado por <a href="https://github.com/paulapascoal">Paula Pascoal</a></p>
