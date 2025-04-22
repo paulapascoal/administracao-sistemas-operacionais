@@ -153,26 +153,22 @@ caption{
 
 }
 
-
-
-
-footer{
+footer {
     background-color: var(--cor5);
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
- 
+
 }
 
 footer a{
     text-decoration: none;
-    color: white;
 }
 
 footer a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
-
 }
+
